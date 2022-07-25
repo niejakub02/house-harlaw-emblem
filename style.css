@@ -1,0 +1,326 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    opacity: 1
+}
+
+.crest {
+    position: absolute;
+    left: 22px;
+    top: 20px;
+    width: 356px;
+    height: 356px;
+    background-color: black;
+    border-radius: 0% 0% 50% 50% / 0% 0% 50% 50%;
+}
+
+.crest-bottom {
+    width: 100px;
+    height: 299px;
+    position: absolute;
+    top: 80px;
+    left: 128px;
+    background-color: black;
+}
+
+.crest-bottom-left {
+    content: "";
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    clip-path: ellipse(40% 20% at 50% 50%);
+    position: absolute;
+    top: 286px;
+    left: 0;
+}
+
+.crest-bottom-right {
+    content: "";
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    clip-path: ellipse(40% 20% at 50% 50%);
+    position: absolute;
+    top: 285px;
+    left: 160px;
+}
+
+.blade {
+    background-color: red;
+    z-index: 20;
+}
+.circle {
+    width: 280px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    top: 26px;
+    left: 75px;
+    transform: rotate(2deg);
+    position: absolute;
+    clip-path: ellipse(40% 20% at 50% 18%);
+    z-index: 1;
+}
+
+.circle-mask {
+    width: 274px;
+    height: 260px;
+    background-color: black;
+    border-radius: 50%;
+    top: -36px;
+    left: 109px;
+    transform: rotate(2deg);
+    position: absolute;
+    clip-path: ellipse(40% 20% at 50% 50%);
+    z-index: 1;
+}
+
+.circle-inset {
+    width: 25px;
+    height: 60px;
+    background-color: black;
+    top: 50px;
+    left: 116px;
+    transform: rotate(-5deg);
+    position: absolute;
+    clip-path: ellipse(45% 20% at 50% 50%);
+    z-index: 2;
+}
+
+.circle-stroke {
+    width: 20px;
+    height: 22px;
+    overflow: hidden;
+    top: 51px;
+    left: 110px;
+    transform: rotate(-20deg);
+    /* background-color: yellow; */
+    clip-path: ellipse(50% 50% at 50% 50%);
+    position: absolute;
+    z-index: 10;
+}
+
+.circle-stroke-inside {
+    width: 25px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid black;
+    opacity: 1;
+    top: -20px;
+    left: 8px;
+    transform: rotate(15deg);
+    position: absolute;
+    z-index: 10;
+    box-sizing: border-box
+}
+
+.handle-1 {
+    top: 48px;
+    left: 100px;
+    height: 55px;
+    width: 30px;
+    transform: rotate(-18deg);
+    /* background-color: yellow; */
+    position: absolute;
+    z-index: 3;
+    overflow: hidden;
+    border-radius: 50% 50% 50% 50% / 30% 30% 0% 0% ;
+}
+
+.h-1-inside {
+    height: 150px;
+    width: 100px;
+    border: 15px solid white;
+    border-radius: 50%;
+    margin-top: -50px;
+    margin-left: -150px;
+    top: 10px;
+    left: 160px;
+    transform: rotate(-22deg);
+    position: absolute;
+    z-index: 5;
+}
+
+.handle-2 {
+    top: 95px;
+    left: 126px;
+    height: 76px;
+    width: 25px;
+    transform: rotate(-24deg);
+    /* background-color: yellow; */
+    position: absolute;
+    z-index: 4;
+    border-top: 2px solid black;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 50% 50% 50% 50% / 25% 20% 0% 0% ;
+}
+
+.h-2-inside {
+    height: 250px;
+    width: 100px;
+    border: 15px solid white;
+    border-radius: 50%;
+    margin-top: -50px;
+    margin-left: -150px;
+    top: -30px;
+    left: 42px;
+    transform: rotate(5deg);
+    position: absolute;
+}
+
+.handle-3 {
+    top: 162px;
+    left: 146px;
+    height: 22px;
+    width: 22px;
+    transform: rotate(-11deg);
+    background-color: white;
+    position: absolute;
+    z-index: 5;
+    border-radius: 50%;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.handle-4 {
+    top: 178px;
+    left: 155px;
+    height: 70px;
+    width: 30px;
+    transform: rotate(-11deg);
+    /* background-color: yellow; */
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+
+.h-4-inside {
+    height: 250px;
+    width: 100px;
+    border: 16px solid white;
+    border-radius: 50%;
+    margin-top: -50px;
+    margin-left: -150px;
+    top: -30px;
+    left: 37px;
+    transform: rotate(6deg);
+    position: absolute;
+}
+
+.handle-5 {
+    top: 240px;
+    left: 162px;
+    height: 22px;
+    width: 22px;
+    transform: rotate(-11deg);
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.handle-6 {
+    top: 256px;
+    left: 162px;
+    height: 40px;
+    width: 22px;
+    /* background-color: yellow; */
+    overflow: hidden;
+    transform: rotate(2deg);
+    position: absolute;
+    z-index: 1;
+    border: 2px solid black;
+    box-sizing: border-box;
+    border-radius: 50% 50% 50% 50% / 20% 20% 40% 22% ;
+    z-index: 5;
+}
+
+.h-6-inside {
+    height: 120px;
+    width: 100px;
+    border: 15px solid white;
+    border-radius: 50%;
+    margin-top: -50px;
+    margin-left: -150px;
+    top: -15px;
+    left: 37px;
+    transform: rotate(-4deg);
+    position: absolute;
+}
+
+.handle-7 {
+    top: 240px;
+    left: 190px;
+    height: 42px;
+    width: 16px;
+    transform: rotate(115deg);
+    /* background-color: yellow; */
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50% 50% 50% 50% / 15% 15% 0% 0% ;
+}
+
+.h-7-inside {
+    height: 200px;
+    width: 100px;
+    border: 14px solid white;
+    border-radius: 50%;
+    margin-top: -50px;
+    margin-left: -150px;
+    top: -30px;
+    left: 151px;
+    transform: rotate(-6deg);
+    position: absolute;
+}
+
+.handle-8 {
+    top: 164px;
+    left: 125px;
+    height: 44px;
+    width: 16px;
+    border: 2px solid black;
+    transform: rotate(-120deg);
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50% 50% 50% 50% / 10% 10% 10% 10% ;
+    box-sizing: border-box;
+    z-index: 6;
+}
+
+
+.bg-img {
+    background-image: url('./x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 35px;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    z-index: 10;
+    opacity: 0;
+}
+
+.crest-top {
+    background-color: black;
+    width: 356px;
+    height: 100px;
+    top: -20px;
+    position: absolute;
+}
